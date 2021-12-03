@@ -36,7 +36,6 @@ function PagePosts(props) {
     
     return (
         <div className='page-post'>
-            { console.log(lastId)}
             <ListPosts list={items} />
             {loading && <Loading />}
             {!fulllist && !loading && <ButtonsLoad handleClick={handleClick}/>}
